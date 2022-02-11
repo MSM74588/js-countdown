@@ -1,4 +1,10 @@
 /* (A) WRAPPER */
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+
 .countdown * {
   font-family: Impact, sans-serif;
   box-sizing: border-box;
