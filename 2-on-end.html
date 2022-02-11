@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown Timer</title>
+
+    <!-- (A) LOAD LIBRARY & THEME -->
+    <link href="countdown-dark.css" rel="stylesheet">
+    <script src="countdown.js"></script>
+  </head>
+  <body>
+    <!-- (B) GENERATE COUNTDOWN TIMER HERE -->
+    <div id="demoB"></div>
+
+    <!-- (C) ATTACH COUNTDOWN TIMER -->
+    <script>
+    counter.attach({
+      target : document.getElementById("demoB"),
+      remain : 65,
+      after : () => { console.log("TIMER HAS ENDED!"); }
+    });
+    </script>
+  </body>
+</html>

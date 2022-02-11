@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown Timer</title>
+
+    <!-- (A) LOAD LIBRARY & THEME -->
+    <link href="countdown-light.css" rel="stylesheet">
+    <script src="countdown.js"></script>
+  </head>
+  <body>
+    <!-- (B) GENERATE COUNTDOWN TIMER HERE -->
+    <div id="demoC"></div>
+
+    <!-- (C) ATTACH COUNTDOWN TIMER -->
+    <script>
+    // (C1) FOR THIS EXAMPLE, WE TAKE 2 DAYS FROM NOW
+    // IN YOUR PROJECT THIS IS NEW DATE("YOUR TARGET DATE/TIME")
+    var till = new Date(Date.now() + 172800000);
+
+    // (C2) COUNTDOWN
+    counter.attach({
+      target : document.getElementById("demoC"),
+      remain : counter.toSecs(till)
+    });
+    </script>
+  </body>
+</html>

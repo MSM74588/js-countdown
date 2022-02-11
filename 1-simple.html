@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Countdown Timer</title>
+
+    <!-- (A) LOAD LIBRARY & THEME -->
+    <link href="countdown-dark.css" rel="stylesheet">
+    <script src="countdown.js"></script>
+  </head>
+  <body>
+    <!-- (B) GENERATE COUNTDOWN TIMER HERE -->
+    <div id="demoA"></div>
+
+    <!-- (C) ATTACH COUNTDOWN TIMER -->
+    <script>
+    counter.attach({
+      target : document.getElementById("demoA"),
+      remain : 5400 // 90 mins = 5400 secs
+    });
+    </script>
+  </body>
+</html>
